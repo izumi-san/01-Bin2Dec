@@ -5,11 +5,9 @@ function isBinary(str) {
 
 function getBinValue() {
 	const value = document.querySelector("#inputBin").value;
-	
 	if(!isBinary(value)){
 		return alert('Insira um número Binário, pfvr!');
 	}
-
 	return value;
 }
 
@@ -20,7 +18,6 @@ function convertBinToDec() {
 	let sum = 0;
 	binValue.split('').reverse().forEach((e,index)=>{
 		sum += parseInt(e)*(2**index);
-		console.log(e, sum);
 	});
 
 	document.querySelector("#inputDec").value = sum;
