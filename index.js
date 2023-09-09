@@ -22,3 +22,5 @@ function convertBinToDec() {
 
 	document.querySelector("#inputDec").value = sum;
 }
+
+module.exports = {isBinary, getBinValue, convertBinToDec};
